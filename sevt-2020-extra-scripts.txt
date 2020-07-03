@@ -1,0 +1,13 @@
+cat scripts/freeze.sh
+vmware-rpctool "instantclone.freeze"
+
+
+cat scripts/set_network.sh
+#!/bin/bash
+# VM has cloned, run scripts to setup networkings:
+# Get POD ID Number from: `vmware-rpctool "info-get guestinfo.ic.podid"`
+echo `vmware-rpctool "info-get guestinfo.ic.podid"` >> /home/auto/PODID 2>&1
+sudo cp /etc/NetworkManager/TEMPLATES/`vmware-rpctool "info-get guestinfo.ic.podid"`  /etc/NetworkManager/system-connections/POD-wan
+sudo reboot
+
+windows freeze.bat/set_network.bat
