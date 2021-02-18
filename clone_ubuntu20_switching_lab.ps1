@@ -28,10 +28,10 @@ New-VM -Name "P01-Ubuntu20" -VM $SourceVM -VMHost 128.107.211.7 -Datastore "data
 Start-VM -Confirm:$false -VM "P01-Ubuntu20"
 
 New-VM -Name "P02-Ubuntu20" -VM $SourceVM -VMHost 128.107.211.8 -Datastore "datastore2"
-Start-VM -Confirm:$false -VM "P02-Ubuntu20""
+Start-VM -Confirm:$false -VM "P02-Ubuntu20"
 
 New-VM -Name "P03-Ubuntu20" -VM $SourceVM -VMHost 128.107.211.9 -Datastore "datastore3"
-Start-VM -Confirm:$false -VM "P03-Ubuntu20
+Start-VM -Confirm:$false -VM "P03-Ubuntu20"
 
 New-VM -Name "P04-Ubuntu20" -VM $SourceVM -VMHost 128.107.211.10 -Datastore "datastore4"
 Start-VM -Confirm:$false -VM "P04-Ubuntu20"
