@@ -1,6 +1,9 @@
 # vmware-esxi-automation
 Scripts used to clone, instant clone, configure, and reset VM hosts for GOLD Programmability Labs
 
+## Demo Video
+https://youtu.be/T48Lt7A55ys
+
 
 ## setup_vlans.ps1
 Use this script to setup the VirtualPortGroups on the ESXi hosts
